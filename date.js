@@ -1,5 +1,5 @@
 
-const d= new Date();
+const d= new Date()
 let day=d.getDay()
 
 if(day==0){
