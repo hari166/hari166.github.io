@@ -5,7 +5,7 @@ let day=d.getDay()
 if(day==0){
     document.write("Sunday")
 } else if(day==1){
-    document.write("monday")
+    document.write("Monday")
 }
 else if(day==2){
     document.write("Tuesday")
