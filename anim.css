@@ -89,3 +89,16 @@
         padding-left: 100px;
 
       }
+
+      .btn{
+        font-family: "Google Sans";
+        transition: 0.4s;
+        border: 2px solid black;
+        margin-left: 120px;
+        background-color: transparent;
+      }
+
+      .btn:hover {
+        background-color: #000000;
+        color: white;
+      }
