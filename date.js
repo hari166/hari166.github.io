@@ -1,24 +1,29 @@
+const d = new Date();
+let day = d.getDay();
+let dayName;
 
-const d= new Date()
-let day=d.getDay()
+switch (day) {
+    case 0:
+        dayName = "Sunday";
+        break;
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+}
+document.write(dayName);
 
-if(day==0){
-    document.write("Sunday")
-} else if(day==1){
-    document.write("Monday")
-}
-else if(day==2){
-    document.write("Tuesday")
-}
-else if(day==3){
-    document.write("Wednesday")
-}
-else if(day==4){
-    document.write("Thursday")
-}
-else if(day==5){
-    document.write("Friday")
-}
-else if(day==6){
-    document.write("Saturday")
-}
