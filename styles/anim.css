@@ -90,6 +90,17 @@
 
       }
 
+      h3 {
+        font-family: "Google Sans", serif;
+        color: rgb(0, 0, 0);
+        padding-left: 100px;
+      }
+
+      ul {
+        padding-left: 150px;
+        font-family: "Google Sans", serif;
+      }
+
       .btn{
         font-family: "Google Sans";
         transition: 0.4s;
