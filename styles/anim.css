@@ -1,115 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@100;200;300;400;500;700;900&display=swap');
 
-      .font{
-        font-family: 'Google Sans', serif;
-        color: #000000;
-        font-size: 38px;
-        font-weight:900;
-      }
+body {
+  font-family: 'Google Sans', sans-serif;
+  background-color: rgb(255, 244, 231);
+  box-sizing: border-box;
+}
 
-      .navbar{
-        padding-left: 70px;
-        padding-top: 35px;
-        padding-right: 70px;
-        background-color: rgb(255, 244, 231) !important;
-      }
+.navbar {
+  background-color: rgb(255, 244, 231) !important;
+  color: black;
+  padding-top: 30px;
+}
 
-      .navbar-brand{
-        transition: transform 0.2s ease-in-out ;
-      }
-      .navbar-brand:hover {
-        transform: skewY(-5deg) ;
-        box-shadow: inset 0 0 0 100px rgb(0, 0, 0);
-        color: #ffffff !important;
-      }
+.navbar-brand {
+  font-size: 38px !important;
+  font-weight: 900;
+  transition: transform 0.2s ease-in-out;
+  display: block;
+}
 
-      .navbar a:hover .fab, .navbar a:hover .fa {
-        transition: 0.5s ease-in-out;
-        transform: scale(1.4); 
-      }
+.navbar-brand:hover {
+  transform: skewY(-5deg);
+  box-shadow: inset 0 0 0 100px rgb(0, 0, 0);
+  color: #ffffff !important;
+}
 
-      .navbar a{
-        text-decoration: none;
-        color: #000000;
-      }
-      
-      .footer {
-        font-family: "Google Sans", serif;
-        font-size: 15px;
-        color: rgb(115, 130, 135);
-        position: fixed;
-        bottom: 0;
-        right: 0;
-        padding-right: 50px;
-        padding-bottom: 15px;
-      }
+.icons {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
 
-      .center{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 70vh;
-      }
+.icons a {
+  margin: 0 10px;
+  color: black;
+}
 
-      .caret h1 {
-        font-family: "Google Sans", serif;
-        width: 9ch;
-        border-right: 4px solid black;
-        margin: 2rem auto;
-        white-space: nowrap;
-        overflow: hidden;
-        animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
-        text-align: center;
-        display: inline-block; 
-      }
+.icons a:hover {
+  transform: scale(1.4);
+}
 
-      @keyframes typing {
-          from {
-              width: 0;
-          }
-      }
-      @keyframes blink-caret {
-          50% {
-              border-color:transparent;
-          }
-      }
+@media (max-width: 450px){
+  .btn {
+    margin: 0 auto;
+    background-color: transparent;
+  }
+  .navbar-brand {
+    margin-bottom: 10px;
+    text-align: center !important;
+  }
 
-      p {
-        font-family: "Google Sans", serif;
-        font-size: 18px;
-        color: rgb(0, 0, 0);
-        padding-left: 100px;
-        padding-right: 600px;
-      }
+  .icons {
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+  }
+  .para {
+    font-size: 16px !important;
+    margin: 0 auto 15px auto;
+    text-align: center;
+  }
+  .footer {
+    position:static;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 244, 231);
+    text-align: center;
+    align-self:  center;
+  }
+}
 
-      .h3 {
-        font-family: "Google Sans", serif;
-        font-size: 35px;
-        color: rgb(0, 0, 0);
-        padding-left: 100px;
+.footer {
+  position:static;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 244, 231);
+  padding-right: 25px;
+  text-align: right;
+}
 
-      }
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
 
-      h3 {
-        font-family: "Google Sans", serif;
-        color: rgb(0, 0, 0);
-        padding-left: 100px;
-      }
+.caret h1 {
+  width: 9ch;
+  border-right: 4px solid black;
+  margin: 2rem auto;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(13, end), blink-caret 0.5s step-end infinite alternate;
+  text-align: center;
+  display: inline-block;
+}
 
-      ul {
-        padding-left: 150px;
-        font-family: "Google Sans", serif;
-      }
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
 
-      .btn{
-        font-family: "Google Sans";
-        transition: 0.4s;
-        border: 2px solid black;
-        margin-left: 120px;
-        background-color: transparent;
-      }
+@keyframes blink-caret {
+  50% {
+    border-color: transparent;
+  }
+}
 
-      .btn:hover {
-        background-color: #000000;
-        color: white;
-      }
+ul {
+  margin-left: auto;
+}
+
+.btn {
+  transition: 0.4s;
+  border: 2px solid rgb(0, 0, 0);
+  background-color: transparent;
+}
+
+.btn:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.para {
+  font-family: 'Google Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 0 0 20px 20px;
+  text-align: left;
+}
