@@ -10,31 +10,57 @@
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
     <link rel="manifest" href="assets/site.webmanifest">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type = "text/css" href="styles/anim.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="styles/anim.css">
   </head>
   
 
 <body style="background-color: rgb(255, 244, 231);">
 
-  <nav class="navbar navbar-light bg-light ">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand font hover" href="main.html">harichand manoj</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item icons d-lg-flex">
+            <a class="nav-link" href="https://www.linkedin.com/in/harichand-manoj/" target="_blank"
+                title="Visit LinkedIn Profile">
+                <i data-feather="linkedin"></i>
+                <script>
+                    feather.replace();
+                </script>
+            </a>
+        </li>
 
-      <a class="navbar-brand font mr-auto hover" href="main.html">harichand manoj</a>
+        <li class="nav-item icons d-lg-flex">
+            <a class="nav-link" href="https://www.github.com/hari166" target="_blank" title="Visit GitHub">
+                <i data-feather="github"></i>
+                <script>
+                    feather.replace();
+                </script>
+            </a>
+        </li>
 
-      <a href="https://www.linkedin.com/in/harichand-manoj/" target="_blank" title="Visit LinkedIn Profile">
-        <i class="fab fa-linkedin fa-lg pl-5"></i>
-      </a>
-
-      <a href="https://www.github.com/hari166" target="_blank" title="Visit GitHub">
-        <i class="fab fa-github fa-lg pl-5"></i>
-      </a>
-
-      <a href="mailto:harichandmanoj@gmail.com" title="Send an email">
-        <i class="fa fa-envelope-square fa-lg pl-5"></i>
-      </a>
-    
+        <li class="nav-item icons d-lg-flex">
+            <a class="nav-link" href="mailto:harichandmanoj@gmail.com" title="Send an email">
+                <i data-feather="mail"></i>
+                <script>
+                    feather.replace();
+                </script>
+            </a>
+        </li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
   <div style="width:70% ; margin:auto;">
@@ -43,8 +69,8 @@
 
   <br><br><br>
 
-  <h3>SatTRACE- 2023</h3>
-    <p><strong>Tech stack:</strong> Golang, Postgres</p>
+  <h3 style="margin-left: 20px;">SatTRACE- 2023</h3>
+    <p style="margin-left: 20px;"><strong>Tech stack:</strong> Golang, Postgres</p>
       <ul>
           <li>CLI tool for satellite tracking in Go.</li>
           <li>Query data by ID or name.</li>
@@ -55,8 +81,8 @@
 
   <br><br>
 
-  <h3>EasyWeather- 2023</h3>
-    <p><strong>Tech stack:</strong> Golang, Gin, OpenWeather API, JS</p>
+  <h3 style="margin-left: 20px;">EasyWeather- 2023</h3>
+    <p style="margin-left: 20px;"><strong>Tech stack:</strong> Golang, Gin, OpenWeather API, JS</p>
       <ul>
           <li>Developed a weather web application using Golang.</li>
           <li>Integrated APIs to fetch real-time weather data from an open source.</li>
@@ -66,8 +92,8 @@
 
   <br><br>
 
-  <h3>Intergo- 2023</h3>
-    <p><strong>Tech stack:</strong> Golang</p>
+  <h3 style="margin-left: 20px;">Intergo- 2023</h3>
+    <p style="margin-left: 20px;"><strong>Tech stack:</strong> Golang</p>
       <ul>
           <li>A primitive interpreter written in Go, to learn about the intricacies of a language, and underlying mechanisms of code execution.</li>
           <li>Tokenized and parsed via REPL.</li>
@@ -76,8 +102,8 @@
 
   <br><br>
 
-  <h3>Airline Customer Satisfaction- 2022</h3>
-    <p><strong>Tech stack:</strong> Python, NumPy, Pandas</p>
+  <h3 style="margin-left: 20px;">Airline Customer Satisfaction- 2022</h3>
+    <p style="margin-left: 20px;"><strong>Tech stack:</strong> Python, NumPy, Pandas</p>
       <ul>
           <li>Developed a machine learning program that utilizes customer data.</li>
           <li>Predict whether a future customer will prefer a particular airline for future flying.</li>
